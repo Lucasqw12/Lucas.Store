@@ -1,0 +1,191 @@
+* {
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box ;
+    text-decoration: none;
+    font-family:"lexend", sans-serif ;
+}
+
+
+header {
+    background-image: url(../img/bg.svg);
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    width: 1360px;
+    height: 600px;
+   
+}
+
+.logo {
+     font-family: "Orbitron", sans-serif;
+     font-size: 3rem;
+     font-weight: 900;
+     color: blue;
+     text-shadow: 0 0 10px rgba(4, 0, 255, 0.5);
+     padding:5px 70px;
+
+}
+
+.navbar {
+  position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 30px 500px;
+    justify-content: space-between;
+    align-items: center;
+       color: #FFF;
+
+    }
+    
+    header nav ul {
+        display: flex;
+        gap: 48px;
+}
+
+header nav ul li {
+    cursor: pointer;
+    position: relative;
+    padding:  0;
+}
+
+header nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0004ff;
+    transition: widt 0.5s ease;
+
+}
+
+header nav ul li:hover::after {
+
+    width: 100%;
+}
+
+
+
+.button-container {
+    position: fixed;
+    top: 20px;
+    right: 16px;
+    display:flex ;
+    gap: 10px;
+    z-index: 1000;
+    padding: 0px 70px;
+
+ }
+
+.inscreverse-btn {
+    background-color: #0004ff;
+  color: white;
+  border: none;
+  padding: 2px 50px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.conectese-btn {
+    padding: 10px 10px;
+background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+ .home {
+
+    padding: 140px 70px;
+    color: #FFF;
+}
+
+.paragrafo {
+    padding: 10px 0px;
+
+}
+
+.titulo-h1 {
+    font-size: 3rem;
+    
+}
+
+.btn {
+padding: 0px 65px;
+
+    }
+
+
+.button {
+     background-color: #0004ff;
+  color: white;
+  border: none;
+  padding: 20px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+
+}
+
+
+main {
+    padding: 70px 182px;
+    gap: 60px;
+
+    & .title {
+
+        & h2 {
+            display: flex;
+            flex-direction: column;
+            font: 36px;
+            font-weight: 600;
+            text-align: center;
+            color: #181818;
+            line-height: 140%;
+        }
+
+        & p {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            color: #323232;
+            line-height: 150%;
+        }
+    }
+
+    & .cards {
+        gap: 83px;
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        padding: 60px;
+
+        & .card {
+            gap: 25px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 0%;
+            color: #181818;
+        }
+    }
+}
+
+
+
+
+
